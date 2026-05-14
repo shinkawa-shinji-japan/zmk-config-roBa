@@ -67,30 +67,31 @@
         compatible = "zmk,keymap";
 
         // Layer 0: Default (QWERTY + keyball39 風ホームロウモッド)
+
         default_layer {
             bindings = <
-&kp Q     &kp W        &kp E      &kp R                        &kp T                                                          &kp Y          &kp U        &lt 5 I    &mt LALT O    &kp P
-&kp A     &mt LGUI S   &kp D      &kp F                        &kp G        &kp LS(LG(S))                      &kp MINUS      &kp H          &mt LCTRL J  &lt 2 K    &mt LSHFT L   &kp SQT
-&lt 1 Z   &mt LSHFT X  &lt 2 C    &mt LALT V                   &kp B        &kp COLON                          &kp SEMICOLON  &kp N          &mt LALT M   &kp COMMA  &kp DOT       &kp SLASH
-&kp ESC   &kp LWIN     &kp LCTRL  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &kp INT_MUHENKAN                   &kp BACKSPACE  &lt 1 ENTER                                          &lt 3 TAB
+&kp Q    &kp W        &kp E    &kp R       &kp T                                        &kp Y      &kp U        &kp I      &mt LALT O   &kp P
+&kp A    &mt LGUI S   &kp D    &kp F       &kp G      &kp LS(LG(S))      &none          &kp H      &mt LCTRL J  &lt 2 K    &mt LSHFT L  &kp ENTER
+&lt 1 Z  &mt LSHFT X  &lt 2 C  &mt LALT V  &kp B      &kp COLON          &none          &kp N      &mt LALT M   &mkp LCLK  &mo 5        &lt 2 MINUS
+&kp ESC  &kp LWIN     &none    &kp LCTRL   &kp SPACE  &kp DEL            &kp BACKSPACE  &lt 1 TAB                                       &mkp RCLK
             >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         // Layer 1: ARROW / MEDIA  (旧 keyball L1。Enter 長押し or Z 長押しで起動)
+
         FUNCTION {
             bindings = <
-&kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &kp C_BRI_UP  &trans                                              &kp HOME   &kp END    &trans    &trans     &trans
-&trans        &kp C_BRI_DN  &trans      &trans        &trans   &trans                       &trans       &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
-&trans        &trans        &kp PG_UP   &kp LC(PG_UP) &kp LC(PG_DN)  &trans                 &trans       &kp PG_DN  &trans     &trans    &trans     &trans
-&trans        &trans        &trans      &trans        &trans   &trans                       &trans       &trans                                     &trans
+&kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &kp C_BRI_UP   &trans                             &kp HOME   &kp END   &trans  &trans     &trans
+&trans        &kp C_BRI_DN  &trans      &trans         &trans         &trans      &trans  &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT  &trans
+&trans        &trans        &kp PG_UP   &kp LC(PG_UP)  &kp LC(PG_DN)  &trans      &trans  &kp PG_DN  &trans    &trans  &trans     &trans
+&trans        &trans        &trans      &trans         &trans         &trans      &trans  &trans                                  &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         // Layer 2: NUM (C / K / SPACE 長押し)
+
         NUM {
             bindings = <
 &kp MINUS                   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS                                                   &kp CARET         &kp AMPERSAND      &kp TILDE       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
@@ -101,12 +102,13 @@
         };
 
         // Layer 3: FUNCTION / MACRO  (旧 keyball L3。Tab 長押しで起動)
+
         ARROW {
             bindings = <
-&kp F1   &kp F2   &kp F3   &kp F4   &kp F5                                                  &trans          &trans       &trans  &trans  &kp LG(DOT)
-&kp F6   &kp F7   &kp F8   &kp F9   &kp F10  &trans                       &trans            &kp LS(LG(S))   &kp LG(TAB)  &trans  &kp F12 &trans
-&trans   &trans   &kp F11  &kp F12  &trans   &trans                       &trans            &kp LALT        &trans       &trans  &trans  &kp LG(DOT)
-&trans   &trans   &trans   &trans   &trans   &trans                       &trans            &trans                                       &trans
+&kp F1  &kp F2  &kp F3   &kp F4   &kp F5                       &trans         &trans       &trans  &trans   &kp LG(DOT)
+&kp F6  &kp F7  &kp F8   &kp F9   &kp F10  &trans      &trans  &kp LS(LG(S))  &kp LG(TAB)  &trans  &kp F12  &trans
+&trans  &trans  &kp F11  &kp F12  &trans   &trans      &trans  &kp LALT       &trans       &trans  &trans   &kp LG(DOT)
+&trans  &trans  &trans   &trans   &trans   &trans      &trans  &trans                                       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
