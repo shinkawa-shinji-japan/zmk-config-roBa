@@ -70,10 +70,10 @@
 
         default_layer {
             bindings = <
-&kp Q    &kp W        &kp E    &kp R       &kp T                                  &kp Y      &kp U        &kp I      &mt LALT O   &kp P
-&kp A    &mt LGUI S   &kp D    &kp F       &kp G      &none        &none          &kp H      &mt LCTRL J  &lt 2 K    &mt LSHFT L  &kp ENTER
-&lt 1 Z  &mt LSHFT X  &lt 2 C  &mt LALT V  &kp B      &none        &none          &kp N      &mt LALT M   &mkp LCLK  &mo 5        &lt 2 MINUS
-&kp ESC  &kp LWIN     &none    &kp LCTRL   &kp SPACE  &kp DEL      &kp BACKSPACE  &lt 1 TAB                                       &mkp RCLK
+&kp Q    &kp W        &kp E    &kp R       &kp T                                        &kp Y      &kp U        &kp I      &mt LALT O   &kp P
+&kp A    &mt LGUI S   &kp D    &kp F       &kp G      &kp LA(GRAVE)      &none          &kp H      &mt LCTRL J  &lt 2 K    &mt LSHFT L  &kp ENTER
+&lt 1 Z  &mt LSHFT X  &lt 2 C  &mt LALT V  &kp B      &none              &none          &kp N      &mt LALT M   &mkp LCLK  &mo 5        &lt 2 MINUS
+&kp ESC  &kp LWIN     &none    &kp LCTRL   &kp SPACE  &kp DEL            &kp BACKSPACE  &lt 1 TAB                                       &mkp RCLK
             >;
         };
 
@@ -92,10 +92,10 @@
 
         NUM {
             bindings = <
-&kp N1          &kp NUMBER_2     &none   &kp N3          &kp N4                                                   &kp N9     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &kp EQUAL
-&kp N5          &kp N6           &none   &kp N7          &kp N8      &kp LC(LA(KP_NUMBER_0))      &kp UNDERSCORE  &kp N0     &kp SEMI          &kp SQT            &kp RET    &kp RET
-&kp LANGUAGE_4  &kp KP_NUMBER_1  &none   &kp LANGUAGE_7  &kp PERIOD  &kp EQUAL                    &trans          &kp COMMA  &kp DOT           &kp FSLH           &kp BSLH   &kp GRAVE
-&trans          &trans           &trans  &trans          &trans      &trans                       &trans          &trans                                                     &trans
+&kp N1        &kp NUMBER_2  &none   &kp N3            &kp N4                      &kp N9     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &kp EQUAL
+&kp N5        &kp N6        &none   &kp N7            &kp N8  &none       &none   &kp N0     &kp SEMI          &kp SQT            &kp RET    &kp RET
+&kp INT_KANA  &trans        &none   &kp INT_MUHENKAN  &none   &none       &none   &kp COMMA  &kp DOT           &kp FSLH           &kp BSLH   &kp GRAVE
+&trans        &trans        &trans  &trans            &trans  &trans      &trans  &trans                                                     &trans
             >;
         };
 
