@@ -81,10 +81,10 @@
 
         FUNCTION {
             bindings = <
-&kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &kp C_BRI_UP   &trans                             &kp HOME   &kp END   &trans  &trans     &trans
-&trans        &kp C_BRI_DN  &trans      &trans         &trans         &trans      &trans  &kp LEFT   &kp DOWN  &kp UP  &kp RIGHT  &trans
-&trans        &trans        &kp PG_UP   &kp LC(PG_UP)  &kp LC(PG_DN)  &trans      &trans  &kp PG_DN  &trans    &trans  &trans     &trans
-&trans        &trans        &trans      &trans         &trans         &trans      &trans  &trans                                  &trans
+&kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &kp C_BRI_UP   &trans                             &kp HOME   &kp END        &trans  &trans     &trans
+&trans        &kp C_BRI_DN  &trans      &trans         &trans         &trans      &trans  &kp LEFT   &kp DOWN       &kp UP  &kp RIGHT  &trans
+&trans        &trans        &kp PG_UP   &kp LC(PG_UP)  &kp LC(PG_DN)  &trans      &trans  &kp PG_UP  &kp PAGE_DOWN  &trans  &trans     &trans
+&trans        &trans        &trans      &trans         &trans         &trans      &trans  &trans                                       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
