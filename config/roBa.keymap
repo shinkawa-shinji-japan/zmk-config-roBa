@@ -73,13 +73,13 @@
 &kp Q    &kp W        &kp E    &kp R       &kp T                                        &kp Y      &kp U        &kp I      &mt LALT O   &kp P
 &kp A    &mt LGUI S   &kp D    &kp F       &kp G      &kp LA(GRAVE)      &none          &kp H      &mt LCTRL J  &lt 2 K    &mt LSHFT L  &kp ENTER
 &lt 1 Z  &mt LSHFT X  &lt 2 C  &mt LALT V  &kp B      &none              &none          &kp N      &mt LALT M   &mkp LCLK  &mo 5        &lt 1 MINUS
-&kp ESC  &kp LWIN     &none    &kp LCTRL   &kp SPACE  &kp DEL            &kp BACKSPACE  &lt 1 TAB                                       &mkp RCLK
+&kp ESC  &kp LWIN     &none    &kp LCTRL   &kp SPACE  &kp DEL            &kp BACKSPACE  &lt 3 TAB                                       &mkp RCLK
             >;
         };
 
         // Layer 1: ARROW / MEDIA  (旧 keyball L1。Enter 長押し or Z 長押しで起動)
 
-        FUNCTION {
+        Move {
             bindings = <
 &kp C_VOL_DN  &kp C_VOL_UP  &kp C_MUTE  &kp C_BRI_UP   &trans                             &kp HOME   &kp END        &trans  &trans     &trans
 &trans        &kp C_BRI_DN  &trans      &trans         &trans         &trans      &trans  &kp LEFT   &kp DOWN       &kp UP  &kp RIGHT  &trans
@@ -101,7 +101,7 @@
 
         // Layer 3: FUNCTION / MACRO  (旧 keyball L3。Tab 長押しで起動)
 
-        ARROW {
+        Function {
             bindings = <
 &kp F1  &kp F2  &kp F3  &kp F4   &kp F5                       &none          &none          &none        &none    &none
 &kp F6  &kp F7  &kp F8  &kp F9   &kp F10  &none       &none   &kp LS(LG(S))  &none          &kp LG(TAB)  &kp F12  &none
