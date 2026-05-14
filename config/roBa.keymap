@@ -93,10 +93,10 @@
 
         NUM {
             bindings = <
-&kp N1        &kp NUMBER_2  &none   &kp N3            &kp N4                      &kp N9     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &kp EQUAL
-&kp N5        &kp N6        &none   &kp N7            &kp N8  &none       &none   &kp N0     &kp SEMI          &kp SQT            &kp RET    &kp RET
-&kp LANG1     &kp LANG2     &none   &kp INT_MUHENKAN  &none   &none       &none   &kp COMMA  &kp DOT           &kp FSLH           &kp BSLH   &kp GRAVE
-&trans        &trans        &trans  &trans            &trans  &trans      &trans  &trans                                                     &trans
+&kp N1     &kp NUMBER_2  &none   &kp N3          &kp N4                      &kp N9     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &kp EQUAL
+&kp N5     &kp N6        &none   &kp N7          &kp N8  &none       &none   &kp N0     &kp SEMI          &kp SQT            &kp RET    &kp RET
+&kp LANG1  &none         &none   &kp LANGUAGE_2  &none   &none       &none   &kp COMMA  &kp DOT           &kp FSLH           &kp BSLH   &kp GRAVE
+&trans     &trans        &trans  &trans          &trans  &trans      &trans  &trans                                                     &trans
             >;
         };
 
@@ -139,6 +139,7 @@
         };
 
         // Layer 7: BOOST (トラックボール速度ブーストモード。Layer 3 の右上で toggle)
+
         BOOST {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
