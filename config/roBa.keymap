@@ -94,7 +94,7 @@
         NUM {
             bindings = <
 &kp N1     &kp NUMBER_2  &none   &kp N3          &kp N4                      &kp N9     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS  &kp EQUAL
-&kp N5     &kp N6        &none   &kp N7          &kp N8  &none       &none   &kp N0     &kp SEMI          &kp SQT            &kp RET    &kp RET
+&kp N5     &kp N6        &none   &kp N7          &kp N8  &none       &none   &kp N0     &kp SEMI          &kp SQT            &trans     &kp RET
 &kp LANG1  &trans        &none   &kp LANGUAGE_2  &none   &none       &none   &kp COMMA  &kp DOT           &kp FSLH           &kp BSLH   &kp GRAVE
 &trans     &trans        &trans  &trans          &trans  &trans      &trans  &trans                                                     &trans
             >;
