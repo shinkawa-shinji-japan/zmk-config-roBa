@@ -62,6 +62,30 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
+
+        hrm_mt: hrm_mt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_MT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <125>;
+        };
+
+        hrm_lt: hrm_lt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRM_LT";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <125>;
+        };
     };
 
     keymap {
@@ -71,9 +95,9 @@
 
         default_layer {
             bindings = <
-&kp Q    &kp W        &kp E    &kp R       &kp T                                        &kp Y      &kp U        &kp I      &mt LALT O   &kp P
-&kp A    &mt LGUI S   &kp D    &kp F       &kp G      &kp LA(GRAVE)      &none          &kp H      &mt LCTRL J  &lt 2 K    &mt LSHFT L  &lt 1 ENTER
-&lt 1 Z  &mt LSHFT X  &lt 2 C  &mt LALT V  &kp B      &none              &none          &kp N      &mt LALT M   &mkp LCLK  &mo 5        &lt 1 MINUS
+&kp Q       &kp W            &kp E       &kp R           &kp T                                        &kp Y      &kp U            &kp I      &hrm_mt LALT O   &kp P
+&kp A       &hrm_mt LGUI S   &kp D       &kp F           &kp G      &kp LA(GRAVE)      &none          &kp H      &hrm_mt LCTRL J  &hrm_lt 2 K    &hrm_mt LSHFT L  &lt 1 ENTER
+&hrm_lt 1 Z &hrm_mt LSHFT X  &hrm_lt 2 C &hrm_mt LALT V  &kp B      &none              &none          &kp N      &hrm_mt LALT M   &mkp LCLK  &mo 5        &lt 1 MINUS
 &kp ESC  &kp LWIN     &none    &kp LCTRL   &kp SPACE  &kp ESCAPE         &kp BACKSPACE  &lt 3 TAB                                       &mkp RCLK
             >;
         };
